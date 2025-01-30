@@ -1,34 +1,32 @@
-# Markdown Lab 🔄📝
+# Markdown Lab
 
-A (soon to be) powerful and modular web scraper that converts web content into well-structured Markdown files.
-
-[![Python CI](https://github.com/ursisterbtw/markdown_lab/actions/workflows/CI.yml/badge.svg)](https://github.com/ursisterbtw/markdown_lab/actions/workflows/CI.yml)
+Markdown Lab is a powerful and modular web scraper that efficiently converts web content into well-structured Markdown files. This tool is designed to streamline the process of converting HTML documents into clean, easy-to-read Markdown, with extensive support for various HTML elements and robust error handling.
 
 ## Features
 
-- 🌐 Scrapes any accessible website
-- 📝 Converts HTML to clean Markdown format
-- 🔄 Handles various HTML elements:
-  - Headers (h1-h6)
-  - Paragraphs
-  - Links
-  - Images
-  - Lists
-- 📋 Preserves document structure
-- 🪵 Comprehensive logging
-- ✅ Robust error handling
+- Scrapes any accessible website
+- Converts HTML to clean Markdown format
+- Handles various HTML elements:
+  -- Headers (h1-h6)
+  -- Paragraphs
+  -- Links
+  -- Images
+  -- Lists
+- Preserves document structure
+- Comprehensive logging
+- Robust error handling
 
 ## Installation
 
 ```bash
-git clone https://github.com/ursisterbtw/markdown_lab.git
-cd markdown_lab
+git clone [https://github.com/rhettbu/markdown-Lab-web-scraper.git](https://github.com/rhettbu/markdown-Lab-web-scraper.git)
+cd markdown-lab
 pip install -r requirements.txt
 ```
 
 ## Usage
 
-### From The Command Line
+### Command-Line Interface (CLI)
 
 ```python
 python main.py <url> -o <output_file>
@@ -44,10 +42,19 @@ python main.py https://www.example.com -o output.md
 
 ```python
 from main import MarkdownScraper
+
+# Initialize scraper
 scraper = MarkdownScraper()
+
+# Scrape website
 html_content = scraper.scrape_website("https://example.com")
+
+# Convert HTML to Markdown
 markdown_content = scraper.convert_to_markdown(html_content)
+
+# Save the Markdown content to a file
 scraper.save_markdown(markdown_content, "output.md")
+
 ```
 
 ## Testing
@@ -59,29 +66,16 @@ pytest
 ```
 
 ## Dependencies
+Markdown Lab requires the following Python libraries:
+- requests: fetching web pages.
+- beautifulsoup4: parsing HTML and extracting elements.
+- pytest: running unit tests.
+- argparse: command-line argument parsing.
 
-- requests: Web scraping
-- beautifulsoup4: HTML parsing
-- pytest: Testing framework
-- argparse: CLI argument parsing
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE file](LICENSE) for details.
-
-## Acknowledgments
-
-- BeautifulSoup4 for excellent HTML parsing capabilities
-- Requests library for simplified HTTP handling
-- Python community for continuous inspiration 🐍
 
 ## Roadmap
 
@@ -93,6 +87,7 @@ This project is licensed under the MIT License - see the [LICENSE file](LICENSE)
 
 ## Author
 
-🐍🦀 ursister
+- Telegram [rhettjel](https://t.me/rhettjel).
+- Twitter [DeFiMaxi](https://x.com/defai_maxi)
 
 ---
