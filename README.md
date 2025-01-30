@@ -7,11 +7,11 @@ Markdown Lab is a powerful and modular web scraper that efficiently converts web
 - Scrapes any accessible website
 - Converts HTML to clean Markdown format
 - Handles various HTML elements:
-  -- Headers (h1-h6)
-  -- Paragraphs
-  -- Links
-  -- Images
-  -- Lists
+  - Headers (h1-h6)
+  - Paragraphs
+  - Links
+  - Images
+  - Lists
 - Preserves document structure
 - Comprehensive logging
 - Robust error handling
